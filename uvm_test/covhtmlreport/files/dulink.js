@@ -1,0 +1,2 @@
+var g_data = {"6":["work.spi",55.21,1],"7":["work.spi_clock_gen",55.90,1],"1":["work.spi_interface",83.02,1],"3":["work.spi_pkg",39.26,1],"8":["work.spi_shift",84.12,1],"9":["work.spi_slave",53.02,1],"5":["work.tb_top",58.82,1]};
+processDuLinks(g_data);

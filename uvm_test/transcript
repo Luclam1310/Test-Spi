@@ -1,0 +1,537 @@
+# do vsim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vmap 2021.1 Lib Mapping Utility 2021.01 Jan 19 2021
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 11:25:09 on Nov 30,2024
+# vlog -f tb.f 
+# -- Compiling module spi_clock_gen
+# -- Compiling module spi_shift
+# -- Compiling module spi
+# -- Compiling module spi_slave
+# -- Compiling interface spi_interface
+# -- Compiling package spi_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Note: (vlog-2286) ./verify/spi_pkg.sv(4): Using implicit +incdir+C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package spi_pkg
+# ** Warning: ** while parsing file included at ./verify/tb_top.sv(2)
+# ** at ./verify/spi_pkg.sv(1): (vlog-2275) Existing package 'spi_pkg' at line 1 will be overwritten.
+# -- Compiling interface spi_interface
+# ** Warning: ** while parsing file included at ./verify/tb_top.sv(3)
+# ** at ./verify/spi_interface.sv(2): (vlog-2275) Existing interface 'spi_interface' at line 2 will be overwritten.
+# -- Compiling module tb_top
+# -- Importing package spi_pkg
+# 
+# Top level modules:
+# 	tb_top
+# End time: 11:25:09 on Nov 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vsim -coverage tb_top "+UVM_TESTNAME=spi_test" 
+# Start time: 11:25:09 on Nov 30,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-13408) Code coverage will be disabled for some DUs/packages/classes and source files.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.spi_interface(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.spi_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.tb_top(fast)
+# Loading work.spi_interface(fast__2)
+# Loading work.spi_interface(fast__3)
+# Loading work.spi(fast)
+# Loading work.spi_clock_gen(fast)
+# Loading work.spi_shift(fast)
+# Loading work.spi_slave(fast)
+# Loading C:/questasim64_2021.1/uvm-1.1d\win64\uvm_dpi.dll
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 11:25:23 on Nov 30,2024
+# vcover report -html spi_test.ucdb -htmldir covhtmlreport 
+# ** Warning: (vcover-19053) Option '-htmldir' has been deprecated. Please use option '-output' instead.
+# End time: 11:25:37 on Nov 30,2024, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 11:25:37 on Nov 30,2024
+# vcover report -file cov_report.txt spi_test.ucdb 
+# ** Warning: (vcover-19053) Option '-file' has been deprecated. Please use option '-output' instead.
+# End time: 11:25:37 on Nov 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test spi_test...
+# UVM_INFO ./verify/spi_test.svh(12) @ 0: uvm_test_top [uvm_test_top] Build phase called in spi_test
+# UVM_INFO ./verify/spi_env.svh(13) @ 0: uvm_test_top.env [uvm_test_top.env] Build phase called in spi_environment
+# UVM_INFO ./verify/spi_agent.svh(14) @ 0: uvm_test_top.env.agent [uvm_test_top.env.agent] Build phase called in spi_agent
+# UVM_INFO ./verify/spi_driver.svh(14) @ 0: uvm_test_top.env.agent.driver [uvm_test_top.env.agent.driver] Build phase called in spi_driver
+# UVM_INFO ./verify/spi_monitor.svh(14) @ 0: uvm_test_top.env.agent.monitor [uvm_test_top.env.agent.monitor] Build phase called in spi_monitor
+# UVM_INFO ./verify/spi_scoreboard.svh(44) @ 0: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Build phase called in spi_scoreboard
+# UVM_INFO ./verify/spi_agent.svh(30) @ 0: uvm_test_top.env.agent [uvm_test_top.env.agent] Connect phase called in spi_agent
+# UVM_INFO ./verify/spi_scoreboard.svh(50) @ 0: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Connect phase called in spi_scoreboard
+# UVM_INFO ./verify/spi_env.svh(21) @ 0: uvm_test_top.env [uvm_test_top.env] Connect phase called in spi_environment
+# UVM_INFO ./verify/spi_test.svh(19) @ 0: uvm_test_top [uvm_test_top] Connect phase called in spi_test
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 0: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 0: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_test.svh(33) @ 247500: uvm_test_top [uvm_test_top] in main phase
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 757500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 757500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 757500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 757500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 1217500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 1217500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 1217500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 1217500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 1677500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 1677500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 1677500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 1677500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 2137500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 2137500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 2137500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 2137500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 2597500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 2597500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 2597500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 2597500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 3057500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 3057500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 3057500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 3057500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 3517500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 3517500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 3517500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 3517500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 3977500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 3977500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 3977500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 3977500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 4437500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 4437500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 4437500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 4437500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 4897500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 4897500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 4897500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 4897500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 5357500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 5357500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 5357500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 5357500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 5817500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 5817500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 5817500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 5817500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 6277500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 6277500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 6277500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 6277500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 6737500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 6737500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 6737500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 6737500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 7197500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 7197500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 7197500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 7197500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 7657500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 7657500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 7657500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 7657500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 8117500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 8117500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 8117500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 8117500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 8577500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 8577500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 8577500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 8577500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 9037500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 9037500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 9037500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 9037500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 9497500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 9497500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 9497500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 9497500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 9957500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 9957500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 9957500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 9957500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 10417500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 10417500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 10417500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 10417500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 10877500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 10877500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 10877500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 10877500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 11337500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 11337500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 11337500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 11337500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 11797500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 11797500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 11797500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 11797500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 12257500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 12257500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 12257500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 12257500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 12717500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 12717500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 12717500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 12717500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 13177500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 13177500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 13177500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 13177500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 13637500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 13637500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 13637500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 13637500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 14097500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 14097500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 14097500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 14097500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 14557500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 14557500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 14557500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 14557500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 15017500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 15017500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 15017500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 15017500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 15477500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 15477500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 15477500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 15477500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 15937500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 15937500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 15937500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 15937500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 16397500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 16397500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 16397500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 16397500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 16857500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 16857500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 16857500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 16857500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 17317500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 17317500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 17317500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 17317500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 17777500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 17777500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 17777500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 17777500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 18237500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 18237500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 18237500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 18237500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 18697500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 18697500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 18697500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 18697500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 19157500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 19157500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 19157500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 19157500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 19617500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 19617500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 19617500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 19617500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 20077500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 20077500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 20077500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 20077500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 20537500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 20537500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 20537500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 20537500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 20997500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 20997500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 20997500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 20997500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 21457500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 21457500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 21457500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 21457500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 21917500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 21917500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 21917500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 21917500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 22377500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 22377500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 22377500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 22377500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 22837500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 22837500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 22837500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 22837500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 23297500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 23297500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 23297500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 23297500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 23757500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 23757500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 23757500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 23757500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 24217500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 24217500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 24217500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 24217500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 24677500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 24677500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 24677500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 24677500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 25137500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 25137500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 25137500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 25137500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 25597500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 25597500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 25597500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 25597500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 26057500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 26057500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 26057500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 26057500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 26517500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 26517500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 26517500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 26517500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 26977500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 26977500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 26977500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 26977500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 27437500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 27437500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 27437500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 27437500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 27897500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 27897500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 27897500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 27897500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 28357500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 28357500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 28357500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 28357500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 28817500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 28817500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 28817500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 28817500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 29277500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 29277500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 29277500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 29277500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 29737500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 29737500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 29737500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 29737500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 30197500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 30197500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 30197500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 30197500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 30657500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 30657500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 30657500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 30657500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 31117500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 31117500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 31117500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 31117500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 31577500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 31577500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 31577500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 31577500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 32037500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 32037500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 32037500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 32037500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 32497500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 32497500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 32497500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 32497500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 32957500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 32957500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 32957500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 32957500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 33417500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 33417500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 33417500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 33417500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 33877500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 33877500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 33877500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 33877500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 34337500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 34337500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 34337500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 34337500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 34797500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 34797500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 34797500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 34797500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 35257500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 35257500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 35257500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 35257500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 35717500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 35717500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 35717500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 35717500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 36177500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 36177500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 36177500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 36177500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 36637500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 36637500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 36637500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 36637500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 37097500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 37097500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 37097500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 37097500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 37557500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 37557500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 37557500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 37557500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 38017500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 38017500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 38017500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 38017500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 38477500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 38477500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 38477500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 38477500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 38937500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 38937500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 38937500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 38937500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 39397500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 39397500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 39397500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 39397500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 39857500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 39857500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 39857500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 39857500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 40317500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 40317500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 40317500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 40317500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 40777500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 40777500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 40777500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 40777500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 41237500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 41237500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 41237500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 41237500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 41697500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 41697500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 41697500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 41697500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 42157500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 42157500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 42157500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 42157500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 42617500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 42617500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 42617500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 42617500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 43077500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 43077500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 43077500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 43077500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 43537500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 43537500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 43537500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 43537500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 43997500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 43997500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 43997500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 43997500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 44457500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 44457500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 44457500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 44457500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 44917500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 44917500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 44917500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 44917500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 45377500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 45377500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 45377500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 45377500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(98) @ 45837500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(99) @ 45837500: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  PASSED
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 45837500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 45837500: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# ___________________________32 bit___MSB First___TX: posedge___RX: negedge_________________________
+# _____________________________________________TEST PASSED__________________________________________
+# **************************************************************************************************
+# UVM_INFO @ 45927500: uvm_test_top.env.scoreboard [Scoreboard Report] Transactions PASS = 99 FAIL = 0
+# **************************************************************************************************
+# __________________________________________________________________________________________________
+# __________________________________________________________________________________________________
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  413
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [SB]   200
+# [Scoreboard Report]     1
+# [uvm_test_top]     3
+# [uvm_test_top.env]     2
+# [uvm_test_top.env.agent]     2
+# [uvm_test_top.env.agent.driver]     1
+# [uvm_test_top.env.agent.monitor]     1
+# [uvm_test_top.env.scoreboard]   200
+# ** Note: $finish    : C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 459275 ns  Iteration: 106  Instance: /tb_top
+# Saving coverage database on exit...
+# End time: 11:25:37 on Nov 30,2024, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 1

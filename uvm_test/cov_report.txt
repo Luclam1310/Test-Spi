@@ -1,0 +1,92 @@
+Coverage Report Summary Data by instance
+
+=================================================================================
+=== Instance: /tb_top/master
+=== Design Unit: work.spi_interface
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      12        12         0   100.00%
+    Toggles                        218       144        74    66.05%
+
+=================================================================================
+=== Instance: /tb_top/slave
+=== Design Unit: work.spi_interface
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      12        12         0   100.00%
+    Toggles                        218       138        80    63.30%
+
+=================================================================================
+=== Instance: /tb_top/spi_master/clock_gen
+=== Design Unit: work.spi_clock_gen
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10        10         0   100.00%
+    Conditions                       2         0         2     0.00%
+    Expressions                     15        10         5    66.66%
+    Statements                      14        14         0   100.00%
+    Toggles                        148        19       129    12.83%
+
+=================================================================================
+=== Instance: /tb_top/spi_master/shift
+=== Design Unit: work.spi_shift
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        41        32         9    78.04%
+    Conditions                       7         6         1    85.71%
+    Expressions                     16        13         3    81.25%
+    Statements                      22        22         0   100.00%
+    Toggles                        340       257        83    75.58%
+
+=================================================================================
+=== Instance: /tb_top/spi_master
+=== Design Unit: work.spi
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        46        32        14    69.56%
+    Conditions                      16         7         9    43.75%
+    Expressions                     24         5        19    20.83%
+    Statements                      45        41         4    91.11%
+    Toggles                        616       313       303    50.81%
+
+=================================================================================
+=== Instance: /tb_top/spi_slave
+=== Design Unit: work.spi_slave
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        15        10         5    66.66%
+    Conditions                       5         1         4    20.00%
+    Expressions                      9         3         6    33.33%
+    Statements                      20        18         2    90.00%
+    Toggles                        392       216       176    55.10%
+
+=================================================================================
+=== Instance: /tb_top
+=== Design Unit: work.tb_top
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      17        10         7    58.82%
+
+=================================================================================
+=== Instance: /spi_pkg
+=== Design Unit: work.spi_pkg
+=================================================================================
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Assertions                       1         1         0   100.00%
+    Branches                       323        49       274    15.17%
+    Conditions                      53         0        53     0.00%
+    Statements                     406       170       236    41.87%
+
+
+TOTAL ASSERTION COVERAGE: 100.00%  ASSERTIONS: 1
+
+Total Coverage By Instance (filtered view): 51.18%
+

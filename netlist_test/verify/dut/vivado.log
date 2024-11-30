@@ -1,0 +1,918 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Nov 30 11:26:04 2024
+# Process ID: 8564
+# Current directory: D:/TESTING_CHIP/3_spi/uvm_test/verify/dut
+# Command line: vivado.exe -mode tcl
+# Log file: D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/vivado.log
+# Journal file: D:/TESTING_CHIP/3_spi/uvm_test/verify/dut\vivado.jou
+# Running On: Lam, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 8299 MB
+#-----------------------------------------------------------
+Vivado% source gen_net.tcl
+# read_verilog "spi_clock_gen.v"
+# synth_design -top "spi_clock_gen" -part "xc7a35tcpg236-1"
+Command: synth_design -top spi_clock_gen -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2720
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 832.809 ; gain = 412.848
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'spi_clock_gen' [D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi_clock_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'spi_clock_gen' (0#1) [D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi_clock_gen.v:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 923.297 ; gain = 503.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 923.297 ; gain = 503.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 923.297 ; gain = 503.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 923.297 ; gain = 503.336
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1107.977 ; gain = 688.016
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1110.906 ; gain = 690.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1111.090 ; gain = 691.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.090 ; gain = 691.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.090 ; gain = 691.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.090 ; gain = 691.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.090 ; gain = 691.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.090 ; gain = 691.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.090 ; gain = 691.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT2   |     2|
+|4     |LUT3   |     1|
+|5     |LUT4   |    19|
+|6     |LUT5   |     2|
+|7     |LUT6   |    36|
+|8     |FDCE   |    34|
+|9     |FDPE   |     1|
+|10    |IBUF   |    37|
+|11    |OBUF   |     3|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   144|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.090 ; gain = 691.129
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.090 ; gain = 691.129
+Synthesis Optimization Complete : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1111.090 ; gain = 691.129
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1158.113 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1240.641 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: caada796
+INFO: [Common 17-83] Releasing license: Synthesis
+15 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:31 . Memory (MB): peak = 1240.641 ; gain = 845.559
+# write_verilog -mode funcsim spi_clock_gen_netlist.v
+# read_verilog "spi_shift.v"
+# synth_design -top "spi_shift" -part "xc7a35tcpg236-1"
+Command: synth_design -top spi_shift -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1385.301 ; gain = 144.660
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'spi_shift' [D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi_shift.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'spi_shift' (0#1) [D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi_shift.v:1]
+WARNING: [Synth 8-7129] Port latch[3] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port latch[2] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port latch[1] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[31] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[30] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[29] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[28] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[27] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[26] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[25] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[24] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[23] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[22] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[21] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[20] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[19] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[18] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[17] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[16] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[15] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[14] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[13] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[12] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[11] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[10] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[9] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[8] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[7] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[6] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[5] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[4] in module spi_shift is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1475.738 ; gain = 235.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1475.738 ; gain = 235.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1475.738 ; gain = 235.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1475.738 ; gain = 235.098
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   3 Input    5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port latch[3] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port latch[2] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port latch[1] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[31] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[30] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[29] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[28] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[27] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[26] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[25] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[24] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[23] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[22] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[21] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[20] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[19] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[18] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[17] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[16] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[15] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[14] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[13] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[12] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[11] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[10] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[9] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[8] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[7] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[6] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[5] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[4] in module spi_shift is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1475.738 ; gain = 235.098
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1475.738 ; gain = 235.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1475.738 ; gain = 235.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1475.738 ; gain = 235.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1475.738 ; gain = 235.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1475.738 ; gain = 235.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1475.738 ; gain = 235.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1475.738 ; gain = 235.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1475.738 ; gain = 235.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT2  |     2|
+|3     |LUT3  |     2|
+|4     |LUT4  |    10|
+|5     |LUT5  |    44|
+|6     |LUT6  |    80|
+|7     |MUXF7 |     4|
+|8     |FDCE  |    40|
+|9     |IBUF  |    52|
+|10    |OBUF  |    35|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1475.738 ; gain = 235.098
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 63 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1475.738 ; gain = 235.098
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1475.738 ; gain = 235.098
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1475.738 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1475.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: d89a4e1d
+INFO: [Common 17-83] Releasing license: Synthesis
+12 Infos, 63 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1475.738 ; gain = 235.098
+# write_verilog -mode funcsim spi_shift_netlist.v
+# read_verilog "spi.v"
+# synth_design -top "spi" -part "xc7a35tcpg236-1"
+Command: synth_design -top spi -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1475.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'spi' [D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi.v:1]
+INFO: [Synth 8-6157] synthesizing module 'spi_clock_gen' [D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi_clock_gen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'spi_clock_gen' (0#1) [D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi_clock_gen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'spi_shift' [D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi_shift.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'spi_shift' (0#1) [D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi_shift.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'spi' (0#1) [D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi.v:1]
+WARNING: [Synth 8-3917] design spi has port wb_err_o driven by constant 0
+WARNING: [Synth 8-7129] Port latch[3] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port latch[2] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port latch[1] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[31] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[30] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[29] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[28] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[27] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[26] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[25] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[24] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[23] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[22] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[21] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[20] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[19] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[18] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[17] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[16] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[15] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[14] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[13] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[12] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[11] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[10] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[9] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[8] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[7] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[6] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[5] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port byte_sel[4] in module spi_shift is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[1] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[0] in module spi is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1485.688 ; gain = 9.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.574 ; gain = 32.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.574 ; gain = 32.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.574 ; gain = 32.836
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   3 Input    5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               14 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   2 Input   14 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design spi has port wb_err_o driven by constant 0
+WARNING: [Synth 8-7129] Port wb_adr_i[1] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[0] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[31] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[30] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[29] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[28] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[27] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[26] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[25] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[24] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[23] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[22] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[21] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[20] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[19] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[18] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[17] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[16] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[15] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[14] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[13] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[12] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[11] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[10] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[9] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[8] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[7] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[6] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[5] in module spi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[4] in module spi is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1513.316 ; gain = 37.578
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1518.125 ; gain = 42.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1518.125 ; gain = 42.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1518.125 ; gain = 42.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1518.125 ; gain = 42.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1518.125 ; gain = 42.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1518.125 ; gain = 42.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1518.125 ; gain = 42.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1518.125 ; gain = 42.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT2   |    33|
+|4     |LUT3   |    41|
+|5     |LUT4   |    64|
+|6     |LUT5   |    39|
+|7     |LUT6   |   137|
+|8     |MUXF7  |     5|
+|9     |FDCE   |   186|
+|10    |FDPE   |     1|
+|11    |IBUF   |    45|
+|12    |OBUF   |    70|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1518.125 ; gain = 42.387
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1518.125 ; gain = 42.387
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1518.125 ; gain = 42.387
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1518.125 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1518.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: c240f820
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 66 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1518.125 ; gain = 42.387
+# write_verilog -mode funcsim spi_netlist.v
+# read_verilog "spi_slave.v"
+# synth_design -top "spi_slave" -part "xc7a35tcpg236-1"
+Command: synth_design -top spi_slave -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'spi_ctrl_sel', assumed default net type 'wire' [D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi_slave.v:47]
+INFO: [Synth 8-11241] undeclared symbol 'char_len', assumed default net type 'wire' [D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi_slave.v:54]
+INFO: [Synth 8-11241] undeclared symbol 'ie', assumed default net type 'wire' [D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi_slave.v:56]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1518.125 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'spi_slave' [D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi_slave.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'spi_slave' (0#1) [D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi_slave.v:1]
+WARNING: [Synth 8-3848] Net wb_int_o in module/entity spi_slave does not have driver. [D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi_slave.v:23]
+WARNING: [Synth 8-3917] design spi_slave has port wb_err_o driven by constant 0
+WARNING: [Synth 8-7129] Port wb_int_o in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[1] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[0] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[31] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[30] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[29] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[28] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[27] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[26] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[25] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[24] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[23] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[22] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[21] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[20] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[19] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[18] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[17] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[16] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[15] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[14] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[13] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[12] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[11] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[10] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[9] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[8] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[7] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[6] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[5] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[4] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[3] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[2] in module spi_slave is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1518.125 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1522.586 ; gain = 4.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1522.586 ; gain = 4.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1522.586 ; gain = 4.461
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design spi_slave has port wb_err_o driven by constant 0
+WARNING: [Synth 8-7129] Port wb_int_o in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[1] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_adr_i[0] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[31] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[30] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[29] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[28] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[27] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[26] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[25] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[24] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[23] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[22] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[21] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[20] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[19] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[18] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[17] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[16] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[15] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[14] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[13] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[12] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[11] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[10] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[9] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[8] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[7] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[6] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[5] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[4] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[3] in module spi_slave is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wb_sel_i[2] in module spi_slave is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1526.793 ; gain = 8.668
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1531.551 ; gain = 13.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1531.551 ; gain = 13.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1531.570 ; gain = 13.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1531.570 ; gain = 13.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1531.570 ; gain = 13.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1531.570 ; gain = 13.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1531.570 ; gain = 13.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1531.570 ; gain = 13.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     2|
+|2     |LUT1  |     1|
+|3     |LUT2  |     1|
+|4     |LUT3  |     1|
+|5     |LUT4  |     8|
+|6     |LUT5  |     5|
+|7     |LUT6  |    35|
+|8     |FDCE  |    33|
+|9     |FDRE  |    35|
+|10    |IBUF  |    75|
+|11    |OBUF  |    35|
+|12    |OBUFT |     1|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1531.570 ; gain = 13.445
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 70 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1531.570 ; gain = 13.445
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1531.570 ; gain = 13.445
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1531.977 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1531.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a9531ca8
+INFO: [Common 17-83] Releasing license: Synthesis
+13 Infos, 70 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1531.977 ; gain = 13.852
+# write_verilog -mode funcsim spi_slave_netlist.v
+D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/spi_slave_netlist.v
+Vivado% q
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 30 11:28:24 2024...

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Nov 30 11:26:04 2024
+# Process ID: 8564
+# Current directory: D:/TESTING_CHIP/3_spi/uvm_test/verify/dut
+# Command line: vivado.exe -mode tcl
+# Log file: D:/TESTING_CHIP/3_spi/uvm_test/verify/dut/vivado.log
+# Journal file: D:/TESTING_CHIP/3_spi/uvm_test/verify/dut\vivado.jou
+# Running On: Lam, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 4, Host memory: 8299 MB
+#-----------------------------------------------------------
+source gen_net.tcl
+q

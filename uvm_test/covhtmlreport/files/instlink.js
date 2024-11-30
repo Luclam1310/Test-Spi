@@ -1,0 +1,2 @@
+var g_data = {"11":[10,"master",1],"12":[10,"slave",1],"14":[13,"clock_gen",1],"15":[13,"shift",1],"13":[10,"spi_master",1],"16":[10,"spi_slave",1],"10":[-1,"tb_top",1],"18":[-1,"spi_pkg",1]};
+processInstLinks(g_data);

@@ -1,0 +1,630 @@
+# do vsim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vmap 2021.1 Lib Mapping Utility 2021.01 Jan 19 2021
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 11:33:38 on Nov 30,2024
+# vlog -f tb.f 
+# -- Compiling module spi_clock_gen
+# -- Compiling module glbl
+# -- Compiling module spi_shift
+# -- Compiling module spi
+# -- Compiling module spi_clock_gen
+# ** Warning: ./verify/dut/spi_netlist.v(1486): (vlog-2275) Existing module 'spi_clock_gen' at ./verify/dut/spi_clock_gen_netlist.v(15) will be overwritten.
+# -- Compiling module spi_shift
+# ** Warning: ./verify/dut/spi_netlist.v(2256): (vlog-2275) Existing module 'spi_shift' at ./verify/dut/spi_shift_netlist.v(15) will be overwritten.
+# -- Compiling module spi_slave
+# -- Compiling interface spi_interface
+# -- Compiling package spi_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Note: (vlog-2286) ./verify/spi_pkg.sv(4): Using implicit +incdir+C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package spi_pkg
+# ** Warning: ** while parsing file included at ./verify/tb_top.sv(2)
+# ** at ./verify/spi_pkg.sv(1): (vlog-2275) Existing package 'spi_pkg' at line 1 will be overwritten.
+# -- Compiling interface spi_interface
+# ** Warning: ** while parsing file included at ./verify/tb_top.sv(3)
+# ** at ./verify/spi_interface.sv(2): (vlog-2275) Existing interface 'spi_interface' at line 2 will be overwritten.
+# -- Compiling module tb_top
+# -- Importing package spi_pkg
+# 
+# Top level modules:
+# 	glbl
+# 	tb_top
+# End time: 11:33:39 on Nov 30,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
+# vsim -c -L unisims_ver work.tb_top glbl "+UVM_TESTNAME=spi_test" 
+# Start time: 11:33:39 on Nov 30,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-13408) Code coverage will be disabled for some DUs/packages/classes and source files.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.spi_interface(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.spi_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.tb_top(fast)
+# Loading work.spi_interface(fast__2)
+# Loading work.spi_interface(fast__3)
+# Loading work.spi(fast)
+# Loading work.spi_clock_gen(fast)
+# Loading unisims_ver.LUT4(fast)
+# Loading unisims_ver.FDCE(fast)
+# Loading unisims_ver.LUT4(fast__1)
+# Loading unisims_ver.LUT4(fast__2)
+# Loading unisims_ver.LUT2(fast)
+# Loading unisims_ver.FDPE(fast)
+# Loading unisims_ver.LUT5(fast)
+# Loading unisims_ver.LUT4(fast__3)
+# Loading unisims_ver.LUT5(fast__1)
+# Loading unisims_ver.LUT5(fast__2)
+# Loading unisims_ver.LUT6(fast)
+# Loading unisims_ver.LUT4(fast__4)
+# Loading unisims_ver.LUT4(fast__5)
+# Loading unisims_ver.LUT4(fast__6)
+# Loading unisims_ver.LUT6(fast__1)
+# Loading unisims_ver.LUT5(fast__3)
+# Loading unisims_ver.LUT3(fast)
+# Loading unisims_ver.IBUF(fast)
+# Loading unisims_ver.OBUF(fast)
+# Loading work.spi_shift(fast)
+# Loading unisims_ver.LUT4(fast__7)
+# Loading unisims_ver.LUT3(fast__1)
+# Loading unisims_ver.LUT2(fast__1)
+# Loading unisims_ver.LUT4(fast__8)
+# Loading unisims_ver.LUT5(fast__4)
+# Loading unisims_ver.LUT6(fast__2)
+# Loading unisims_ver.LUT3(fast__2)
+# Loading unisims_ver.LUT5(fast__5)
+# Loading unisims_ver.LUT6(fast__3)
+# Loading unisims_ver.CARRY4(fast)
+# Loading unisims_ver.MUXF7(fast)
+# Loading unisims_ver.LUT3(fast__3)
+# Loading unisims_ver.LUT5(fast__6)
+# Loading unisims_ver.LUT4(fast__9)
+# Loading unisims_ver.LUT5(fast__7)
+# Loading unisims_ver.LUT3(fast__4)
+# Loading unisims_ver.LUT4(fast__10)
+# Loading unisims_ver.LUT6(fast__4)
+# Loading unisims_ver.LUT6(fast__5)
+# Loading unisims_ver.LUT6(fast__6)
+# Loading unisims_ver.LUT6(fast__7)
+# Loading unisims_ver.LUT6(fast__8)
+# Loading unisims_ver.LUT6(fast__9)
+# Loading unisims_ver.LUT4(fast__11)
+# Loading unisims_ver.LUT4(fast__12)
+# Loading unisims_ver.LUT4(fast__13)
+# Loading unisims_ver.LUT4(fast__14)
+# Loading unisims_ver.LUT4(fast__15)
+# Loading unisims_ver.LUT6(fast__10)
+# Loading unisims_ver.LUT6(fast__11)
+# Loading unisims_ver.LUT3(fast__5)
+# Loading unisims_ver.LUT6(fast__12)
+# Loading unisims_ver.LUT5(fast__8)
+# Loading unisims_ver.LUT6(fast__13)
+# Loading unisims_ver.LUT5(fast__9)
+# Loading unisims_ver.LUT6(fast__14)
+# Loading unisims_ver.LUT4(fast__16)
+# Loading unisims_ver.LUT3(fast__6)
+# Loading unisims_ver.LUT5(fast__10)
+# Loading unisims_ver.LUT6(fast__15)
+# Loading unisims_ver.LUT6(fast__16)
+# Loading unisims_ver.LUT4(fast__17)
+# Loading unisims_ver.LUT4(fast__18)
+# Loading unisims_ver.LUT6(fast__17)
+# Loading unisims_ver.LUT4(fast__19)
+# Loading unisims_ver.LUT5(fast__11)
+# Loading unisims_ver.LUT6(fast__18)
+# Loading unisims_ver.LUT6(fast__19)
+# Loading unisims_ver.LUT6(fast__20)
+# Loading unisims_ver.LUT5(fast__12)
+# Loading unisims_ver.LUT6(fast__21)
+# Loading unisims_ver.LUT2(fast__2)
+# Loading unisims_ver.LUT6(fast__22)
+# Loading unisims_ver.LUT4(fast__20)
+# Loading unisims_ver.LUT4(fast__21)
+# Loading unisims_ver.LUT5(fast__13)
+# Loading unisims_ver.LUT3(fast__7)
+# Loading unisims_ver.LUT6(fast__23)
+# Loading unisims_ver.LUT5(fast__14)
+# Loading unisims_ver.LUT5(fast__15)
+# Loading unisims_ver.LUT3(fast__8)
+# Loading unisims_ver.LUT4(fast__22)
+# Loading unisims_ver.LUT5(fast__16)
+# Loading unisims_ver.LUT6(fast__24)
+# Loading unisims_ver.LUT6(fast__25)
+# Loading unisims_ver.LUT5(fast__17)
+# Loading unisims_ver.LUT4(fast__23)
+# Loading unisims_ver.BUFG(fast)
+# Loading unisims_ver.LUT6(fast__26)
+# Loading work.spi_slave(fast)
+# Loading unisims_ver.LUT6(fast__27)
+# Loading unisims_ver.LUT4(fast__24)
+# Loading unisims_ver.LUT5(fast__18)
+# Loading unisims_ver.LUT2(fast__3)
+# Loading unisims_ver.FDRE(fast)
+# Loading unisims_ver.LUT1(fast)
+# Loading unisims_ver.LUT6(fast__28)
+# Loading unisims_ver.LUT6(fast__29)
+# Loading unisims_ver.LUT6(fast__30)
+# Loading unisims_ver.LUT5(fast__19)
+# Loading unisims_ver.OBUFT(fast)
+# Loading work.glbl(fast)
+# Loading C:/questasim64_2021.1/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test spi_test...
+# UVM_INFO ./verify/spi_test.svh(12) @ 0: uvm_test_top [uvm_test_top] Build phase called in spi_test
+# UVM_INFO ./verify/spi_env.svh(13) @ 0: uvm_test_top.env [uvm_test_top.env] Build phase called in spi_environment
+# UVM_INFO ./verify/spi_agent.svh(14) @ 0: uvm_test_top.env.agent [uvm_test_top.env.agent] Build phase called in spi_agent
+# UVM_INFO ./verify/spi_driver.svh(14) @ 0: uvm_test_top.env.agent.driver [uvm_test_top.env.agent.driver] Build phase called in spi_driver
+# UVM_INFO ./verify/spi_monitor.svh(14) @ 0: uvm_test_top.env.agent.monitor [uvm_test_top.env.agent.monitor] Build phase called in spi_monitor
+# UVM_INFO ./verify/spi_scoreboard.svh(44) @ 0: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Build phase called in spi_scoreboard
+# UVM_INFO ./verify/spi_agent.svh(30) @ 0: uvm_test_top.env.agent [uvm_test_top.env.agent] Connect phase called in spi_agent
+# UVM_INFO ./verify/spi_scoreboard.svh(50) @ 0: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Connect phase called in spi_scoreboard
+# UVM_INFO ./verify/spi_env.svh(21) @ 0: uvm_test_top.env [uvm_test_top.env] Connect phase called in spi_environment
+# UVM_INFO ./verify/spi_test.svh(19) @ 0: uvm_test_top [uvm_test_top] Connect phase called in spi_test
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 0: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 0: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_test.svh(33) @ 2475000: uvm_test_top [uvm_test_top] in main phase
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 7575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =ff57f702 and OUT_SLAVE_DATA =7fabfb81
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 7575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=26c19f17 and OUT_MASTER_DATA=0
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 7575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 7575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 12175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =41da72ea and OUT_SLAVE_DATA =a0ed3975
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 12175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=9bbc8851 and OUT_MASTER_DATA=ffabfb81
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 12175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 12175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 16775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =f90162e9 and OUT_SLAVE_DATA =fc80b174
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 16775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=26df928a and OUT_MASTER_DATA=a0ed3975
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 16775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 16775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 21375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =b39347fe and OUT_SLAVE_DATA =d9c9a3ff
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 21375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=ce5d8c78 and OUT_MASTER_DATA=7c80b174
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 21375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 21375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 25975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =2406eb5 and OUT_SLAVE_DATA =8120375a
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 25975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=2579d848 and OUT_MASTER_DATA=d9c9a3ff
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 25975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 25975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 30575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =e957e6a7 and OUT_SLAVE_DATA =f4abf353
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 30575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=482494ed and OUT_MASTER_DATA=120375a
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 30575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 30575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 35175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =80091053 and OUT_SLAVE_DATA =40048829
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 35175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=6ac19226 and OUT_MASTER_DATA=f4abf353
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 35175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 35175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 39775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =63a3eb42 and OUT_SLAVE_DATA =31d1f5a1
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 39775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=4000e0d1 and OUT_MASTER_DATA=c0048829
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 39775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 39775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 44375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =f360514d and OUT_SLAVE_DATA =79b028a6
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 44375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=4a2d0279 and OUT_MASTER_DATA=b1d1f5a1
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 44375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 44375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 48975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =45e393a1 and OUT_SLAVE_DATA =a2f1c9d0
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 48975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=f97f08b7 and OUT_MASTER_DATA=79b028a6
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 48975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 48975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 53575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =7f6d2adc and OUT_SLAVE_DATA =bfb6956e
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 53575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=bf5b3573 and OUT_MASTER_DATA=22f1c9d0
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 53575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 53575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 58175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =c638ccc9 and OUT_SLAVE_DATA =e31c6664
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 58175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=c0bc7e5a and OUT_MASTER_DATA=3fb6956e
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 58175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 58175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 62775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =a0114a and OUT_SLAVE_DATA =5008a5
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 62775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=8968b6c9 and OUT_MASTER_DATA=631c6664
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 62775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 62775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 67375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =20835c3f and OUT_SLAVE_DATA =1041ae1f
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 67375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=d5f778b9 and OUT_MASTER_DATA=805008a5
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 67375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 67375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 71975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =a06428bc and OUT_SLAVE_DATA =d032145e
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 71975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=dd925c74 and OUT_MASTER_DATA=9041ae1f
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 71975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 71975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 76575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =eeec2f94 and OUT_SLAVE_DATA =f77617ca
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 76575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=1c4b8b4b and OUT_MASTER_DATA=5032145e
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 76575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 76575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 81175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =e71aeaa0 and OUT_SLAVE_DATA =f38d7550
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 81175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=9ed58638 and OUT_MASTER_DATA=777617ca
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 81175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 81175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 85775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =194e3e4d and OUT_SLAVE_DATA =ca71f26
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 85775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=fc71f3ee and OUT_MASTER_DATA=738d7550
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 85775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 85775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 90375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =8fd520e1 and OUT_SLAVE_DATA =c7ea9070
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 90375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=b59ae4a1 and OUT_MASTER_DATA=ca71f26
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 90375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 90375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 94975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =c6d08626 and OUT_SLAVE_DATA =63684313
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 94975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=aed8f3e3 and OUT_MASTER_DATA=47ea9070
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 94975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 94975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 99575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =1a6046ec and OUT_SLAVE_DATA =8d302376
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 99575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=634b29fe and OUT_MASTER_DATA=e3684313
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 99575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 99575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 104175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =aff8fdff and OUT_SLAVE_DATA =d7fc7eff
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 104175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=451915d2 and OUT_MASTER_DATA=d302376
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 104175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 104175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 108775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =a958d3ba and OUT_SLAVE_DATA =d4ac69dd
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 108775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=88b4593a and OUT_MASTER_DATA=d7fc7eff
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 108775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 108775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 113375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =1a2cffbf and OUT_SLAVE_DATA =8d167fdf
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 113375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=f373d294 and OUT_MASTER_DATA=d4ac69dd
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 113375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 113375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 117975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =3f158bc1 and OUT_SLAVE_DATA =9f8ac5e0
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 117975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=37e339cb and OUT_MASTER_DATA=8d167fdf
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 117975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 117975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 122575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =3a478421 and OUT_SLAVE_DATA =1d23c210
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 122575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=845c2039 and OUT_MASTER_DATA=1f8ac5e0
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 122575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 122575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 127175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =95df2f9a and OUT_SLAVE_DATA =caef97cd
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 127175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=774b1736 and OUT_MASTER_DATA=1d23c210
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 127175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 127175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 131775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =97f229a6 and OUT_SLAVE_DATA =cbf914d3
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 131775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=a2d04f02 and OUT_MASTER_DATA=caef97cd
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 131775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 131775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 136375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =13383692 and OUT_SLAVE_DATA =899c1b49
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 136375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=c2365dfd and OUT_MASTER_DATA=cbf914d3
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 136375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 136375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 140975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =13d252cc and OUT_SLAVE_DATA =89e92966
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 140975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=68cf2163 and OUT_MASTER_DATA=899c1b49
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 140975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 140975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 145575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =c4d223fa and OUT_SLAVE_DATA =e26911fd
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 145575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=2c765694 and OUT_MASTER_DATA=9e92966
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 145575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 145575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 150175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =24ac8ff1 and OUT_SLAVE_DATA =925647f8
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 150175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=bd5293a9 and OUT_MASTER_DATA=e26911fd
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 150175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 150175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 154775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =2b8e8a7d and OUT_SLAVE_DATA =15c7453e
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 154775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=9bcc5a31 and OUT_MASTER_DATA=125647f8
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 154775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 154775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 159375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =aeb613a4 and OUT_SLAVE_DATA =d75b09d2
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 159375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=e6c42f42 and OUT_MASTER_DATA=15c7453e
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 159375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 159375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 163975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =4a54cd5 and OUT_SLAVE_DATA =8252a66a
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 163975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=ce9759c0 and OUT_MASTER_DATA=575b09d2
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 163975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 163975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 168575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =166b974a and OUT_SLAVE_DATA =b35cba5
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 168575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=d0f67bb7 and OUT_MASTER_DATA=252a66a
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 168575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 168575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 173175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =c8a16d0b and OUT_SLAVE_DATA =6450b685
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 173175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=8f97578f and OUT_MASTER_DATA=8b35cba5
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 173175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 173175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 177775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =ce415538 and OUT_SLAVE_DATA =6720aa9c
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 177775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=363202a6 and OUT_MASTER_DATA=e450b685
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 177775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 177775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 182375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =f21c1ab2 and OUT_SLAVE_DATA =f90e0d59
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 182375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=466bc5e8 and OUT_MASTER_DATA=6720aa9c
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 182375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 182375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 186975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =58744a64 and OUT_SLAVE_DATA =2c3a2532
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 186975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=a6cbf9f8 and OUT_MASTER_DATA=f90e0d59
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 186975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 186975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 191575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =991ef756 and OUT_SLAVE_DATA =4c8f7bab
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 191575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=b4836e35 and OUT_MASTER_DATA=2c3a2532
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 191575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 191575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 196175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =4a8fe71 and OUT_SLAVE_DATA =2547f38
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 196175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=ae434df9 and OUT_MASTER_DATA=cc8f7bab
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 196175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 196175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 200775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =bf43ebdc and OUT_SLAVE_DATA =dfa1f5ee
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 200775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=9db7ffff and OUT_MASTER_DATA=2547f38
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 200775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 200775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 205375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =3278e3fa and OUT_SLAVE_DATA =993c71fd
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 205375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=5638ffb2 and OUT_MASTER_DATA=5fa1f5ee
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 205375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 205375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 209975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =143f0fed and OUT_SLAVE_DATA =8a1f87f6
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 209975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=c2f0d4e1 and OUT_MASTER_DATA=993c71fd
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 209975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 209975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 214575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =cdb4a504 and OUT_SLAVE_DATA =66da5282
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 214575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=9eb6d190 and OUT_MASTER_DATA=a1f87f6
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 214575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 214575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 219175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =7fe6c583 and OUT_SLAVE_DATA =bff362c1
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 219175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=505f3770 and OUT_MASTER_DATA=66da5282
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 219175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 219175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 223775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =7e533f3b and OUT_SLAVE_DATA =3f299f9d
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 223775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=1cddb23f and OUT_MASTER_DATA=bff362c1
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 223775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 223775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 228375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =2a13c635 and OUT_SLAVE_DATA =1509e31a
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 228375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=cde127ff and OUT_MASTER_DATA=bf299f9d
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 228375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 228375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 232975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =92e7831c and OUT_SLAVE_DATA =4973c18e
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 232975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=d8d00d18 and OUT_MASTER_DATA=1509e31a
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 232975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 232975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 237575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =fc22f70a and OUT_SLAVE_DATA =7e117b85
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 237575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=72a69102 and OUT_MASTER_DATA=4973c18e
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 237575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 237575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 242175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =c748d39 and OUT_SLAVE_DATA =63a469c
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 242175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=31c987cd and OUT_MASTER_DATA=fe117b85
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 242175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 242175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 246775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =e262ed2d and OUT_SLAVE_DATA =71317696
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 246775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=a4d024c5 and OUT_MASTER_DATA=63a469c
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 246775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 246775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 251375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =1f308d6 and OUT_SLAVE_DATA =80f9846b
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 251375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=e81bfe96 and OUT_MASTER_DATA=71317696
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 251375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 251375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 255975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =feb3bee1 and OUT_SLAVE_DATA =ff59df70
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 255975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=d1d172f4 and OUT_MASTER_DATA=80f9846b
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 255975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 255975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 260575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =e979033d and OUT_SLAVE_DATA =74bc819e
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 260575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=c630d1c8 and OUT_MASTER_DATA=7f59df70
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 260575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 260575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 265175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =ee0acbd6 and OUT_SLAVE_DATA =f70565eb
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 265175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=33fb8bf9 and OUT_MASTER_DATA=74bc819e
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 265175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 265175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 269775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =91ed696e and OUT_SLAVE_DATA =48f6b4b7
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 269775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=b3e6a15e and OUT_MASTER_DATA=f70565eb
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 269775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 269775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 274375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =9531a2ec and OUT_SLAVE_DATA =ca98d176
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 274375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=5ee3a2c9 and OUT_MASTER_DATA=c8f6b4b7
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 274375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 274375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 278975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =415f0bc4 and OUT_SLAVE_DATA =a0af85e2
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 278975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=ea155542 and OUT_MASTER_DATA=4a98d176
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 278975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 278975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 283575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =4ef475c9 and OUT_SLAVE_DATA =a77a3ae4
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 283575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=87284ebf and OUT_MASTER_DATA=20af85e2
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 283575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 283575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 288175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =bc5900d7 and OUT_SLAVE_DATA =de2c806b
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 288175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=4a246213 and OUT_MASTER_DATA=277a3ae4
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 288175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 288175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 292775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =8ac6d692 and OUT_SLAVE_DATA =c5636b49
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 292775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=1ffbb7ce and OUT_MASTER_DATA=de2c806b
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 292775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 292775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 297375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =dfb44a8a and OUT_SLAVE_DATA =efda2545
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 297375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=9cbc0c8c and OUT_MASTER_DATA=c5636b49
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 297375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 297375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 301975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =db211906 and OUT_SLAVE_DATA =6d908c83
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 301975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=9fdf33f4 and OUT_MASTER_DATA=efda2545
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 301975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 301975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 306575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =3c95526f and OUT_SLAVE_DATA =1e4aa937
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 306575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=b86da9ce and OUT_MASTER_DATA=ed908c83
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 306575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 306575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 311175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =4a58df92 and OUT_SLAVE_DATA =a52c6fc9
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 311175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=1265a950 and OUT_MASTER_DATA=9e4aa937
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 311175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 311175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 315775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =b74fd766 and OUT_SLAVE_DATA =5ba7ebb3
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 315775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=69348c1a and OUT_MASTER_DATA=a52c6fc9
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 315775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 315775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 320375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =5552c832 and OUT_SLAVE_DATA =2aa96419
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 320375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=e04a2804 and OUT_MASTER_DATA=dba7ebb3
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 320375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 320375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 324975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =90a9154e and OUT_SLAVE_DATA =48548aa7
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 324975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=59f9bea1 and OUT_MASTER_DATA=aaa96419
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 324975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 324975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 329575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =a2c5bf7e and OUT_SLAVE_DATA =5162dfbf
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 329575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=465c60d4 and OUT_MASTER_DATA=c8548aa7
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 329575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 329575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 334175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =d51f5e96 and OUT_SLAVE_DATA =ea8faf4b
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 334175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=903c3076 and OUT_MASTER_DATA=d162dfbf
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 334175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 334175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 338775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =dd557a1d and OUT_SLAVE_DATA =6eaabd0e
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 338775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=b63c462f and OUT_MASTER_DATA=ea8faf4b
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 338775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 338775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 343375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =b376e1c6 and OUT_SLAVE_DATA =d9bb70e3
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 343375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=8454a205 and OUT_MASTER_DATA=6eaabd0e
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 343375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 343375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 347975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =b83ea33e and OUT_SLAVE_DATA =5c1f519f
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 347975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=7a41e346 and OUT_MASTER_DATA=d9bb70e3
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 347975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 347975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 352575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =4d83c75c and OUT_SLAVE_DATA =26c1e3ae
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 352575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=1ce7e21b and OUT_MASTER_DATA=dc1f519f
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 352575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 352575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 357175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =c66ec802 and OUT_SLAVE_DATA =63376401
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 357175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=535d1dd and OUT_MASTER_DATA=26c1e3ae
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 357175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 357175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 361775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =e6573e5c and OUT_SLAVE_DATA =732b9f2e
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 361775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=cad301d7 and OUT_MASTER_DATA=e3376401
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 361775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 361775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 366375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =78852c8e and OUT_SLAVE_DATA =bc429647
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 366375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=9ed3d83 and OUT_MASTER_DATA=732b9f2e
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 366375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 366375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 370975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =a80e650c and OUT_SLAVE_DATA =54073286
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 370975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=8e09c0fd and OUT_MASTER_DATA=bc429647
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 370975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 370975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 375575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =20e706e0 and OUT_SLAVE_DATA =90738370
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 375575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=2287b444 and OUT_MASTER_DATA=54073286
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 375575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 375575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 380175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =d657b5ae and OUT_SLAVE_DATA =eb2bdad7
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 380175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=80e890f9 and OUT_MASTER_DATA=10738370
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 380175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 380175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 384775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =5dd926ad and OUT_SLAVE_DATA =aeec9356
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 384775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=54bc0247 and OUT_MASTER_DATA=eb2bdad7
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 384775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 384775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 389375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =6f4d5302 and OUT_SLAVE_DATA =37a6a981
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 389375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=f72f69e9 and OUT_MASTER_DATA=2eec9356
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 389375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 389375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 393975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =8d58285e and OUT_SLAVE_DATA =46ac142f
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 393975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=379a2e9e and OUT_MASTER_DATA=b7a6a981
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 393975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 393975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 398575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =2dc2b62c and OUT_SLAVE_DATA =16e15b16
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 398575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=41e1aa07 and OUT_MASTER_DATA=c6ac142f
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 398575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 398575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 403175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =ff03faa7 and OUT_SLAVE_DATA =ff81fd53
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 403175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=1a157555 and OUT_MASTER_DATA=16e15b16
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 403175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 403175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 407775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =428945bd and OUT_SLAVE_DATA =a144a2de
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 407775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=b9c5427d and OUT_MASTER_DATA=ff81fd53
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 407775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 407775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 412375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =a3c174d5 and OUT_SLAVE_DATA =d1e0ba6a
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 412375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=f5689523 and OUT_MASTER_DATA=2144a2de
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 412375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 412375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 416975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =6047e0b9 and OUT_SLAVE_DATA =b023f05c
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 416975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=abe41df9 and OUT_MASTER_DATA=51e0ba6a
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 416975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 416975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 421575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =b509e781 and OUT_SLAVE_DATA =da84f3c0
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 421575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=cf24df81 and OUT_MASTER_DATA=3023f05c
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 421575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 421575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 426175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =139bec2b and OUT_SLAVE_DATA =9cdf615
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 426175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=5d63bd07 and OUT_MASTER_DATA=5a84f3c0
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 426175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 426175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 430775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =9a77fb55 and OUT_SLAVE_DATA =4d3bfdaa
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 430775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=39544a32 and OUT_MASTER_DATA=89cdf615
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 430775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 430775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 435375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =35817779 and OUT_SLAVE_DATA =1ac0bbbc
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 435375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=b1eaa03d and OUT_MASTER_DATA=4d3bfdaa
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 435375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 435375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 439975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =6e5da1d8 and OUT_SLAVE_DATA =b72ed0ec
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 439975000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=450cc1c5 and OUT_MASTER_DATA=1ac0bbbc
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 439975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 439975000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 444575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =f710832c and OUT_SLAVE_DATA =7b884196
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 444575000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=2254bc94 and OUT_MASTER_DATA=372ed0ec
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 444575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 444575000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 449175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =43367109 and OUT_SLAVE_DATA =219b3884
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 449175000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=ea6deda8 and OUT_MASTER_DATA=7b884196
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 449175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 449175000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 453775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =24e9a82 and OUT_SLAVE_DATA =81274d41
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 453775000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=d3d3deb4 and OUT_MASTER_DATA=219b3884
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 453775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 453775000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# UVM_INFO ./verify/spi_scoreboard.svh(104) @ 458375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Slave  FAILED: EXP_SLAVE_DATA =255093ee and OUT_SLAVE_DATA =92a849f7
+# UVM_INFO ./verify/spi_scoreboard.svh(105) @ 458375000: uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Master FAILED: EXP_MAsTER_DATA=876c2b77 and OUT_MASTER_DATA=81274d41
+# UVM_INFO ./verify/spi_scoreboard.svh(90) @ 458375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM DRIVER
+# UVM_INFO ./verify/spi_scoreboard.svh(93) @ 458375000: uvm_test_top.env.scoreboard [SB] TRANSACTIONS FROM MONITOR
+# ___________________________32 bit___MSB First___TX: posedge___RX: negedge__________________________
+# _____________________________________________TEST FAILED___________________________________________
+# **************************************************************************************************
+# UVM_INFO @ 459275000: uvm_test_top.env.scoreboard [Scoreboard Report] Trasactions PASS = 0 FAIL = 99
+# **************************************************************************************************
+# __________________________________________________________________________________________________
+# __________________________________________________________________________________________________
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  413
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [SB]   200
+# [Scoreboard Report]     1
+# [uvm_test_top]     3
+# [uvm_test_top.env]     2
+# [uvm_test_top.env.agent]     2
+# [uvm_test_top.env.agent.driver]     1
+# [uvm_test_top.env.agent.monitor]     1
+# [uvm_test_top.env.scoreboard]   200
+# ** Note: $finish    : C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 459275 ns  Iteration: 106  Instance: /tb_top
+# End time: 11:33:51 on Nov 30,2024, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 1

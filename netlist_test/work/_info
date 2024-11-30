@@ -1,0 +1,238 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/TESTING_CHIP/3_spi/netlist_test
+T_opt
+!s11d spi_pkg D:/TESTING_CHIP/3_spi/netlist_test/work 1 spi_interface 1 D:/TESTING_CHIP/3_spi/netlist_test/work 
+!s110 1732966420
+VNo0Y3lm1D=UKEj3]41dQg3
+04 6 4 work tb_top fast 0
+04 4 4 work glbl fast 0
+=1-60189552fd33-674af813-38d-3710
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work -L unisims_ver
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vglbl
+Z2 !s110 1732966419
+!i10b 1
+!s100 :`YCaJBN7^o2^B6QkRNRD0
+IV9_B?ZEWozDh5mNKCl@OP1
+R0
+w1732991212
+8./verify/dut/spi_clock_gen_netlist.v
+F./verify/dut/spi_clock_gen_netlist.v
+!i122 0
+L0 1133 78
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z5 !s108 1732966418.000000
+Z6 !s107 ./verify/spi_test.svh|./verify/spi_env.svh|./verify/spi_seq.svh|./verify/spi_scoreboard.svh|./verify/spi_coverage.svh|./verify/spi_agent.svh|./verify/spi_sequencer.svh|./verify/spi_monitor.svh|./verify/spi_driver.svh|./verify/wb_bfm.svh|./verify/spi_seq_item.svh|./verify/tb_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_deprecated_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_reg_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_callback_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_sequence_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/tlm1/uvm_tlm_imps.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_tlm_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_printer_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_object_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_phase_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_message_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/macros/uvm_version_defines.svh|C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh|./verify/tb_top.sv|./verify/spi_pkg.sv|./verify/spi_interface.sv|./verify/dut/spi_slave_netlist.v|./verify/dut/spi_netlist.v|./verify/dut/spi_shift_netlist.v|./verify/dut/spi_clock_gen_netlist.v|
+Z7 !s90 -f|tb.f|
+!i113 0
+Z8 !s102 +cover=bcefst +cover=bcefst
+Z9 o+acc +cover=bcefst -timescale 1ns/10ps +acc +cover=bcefst -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z10 !s92 +incdir+./verify/dut +acc +cover=bcefst +incdir+./verify -timescale 1ns/10ps +acc +cover=bcefst -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vspi
+R2
+!i10b 1
+!s100 8V5SX1_8ejX@LgBl[HiU;3
+Ikl>jWF3606AF;a`S6L9VL0
+R0
+Z11 w1732991245
+Z12 8./verify/dut/spi_netlist.v
+Z13 F./verify/dut/spi_netlist.v
+!i122 0
+L0 15 1470
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R9
+R10
+R1
+vspi_clock_gen
+R2
+!i10b 1
+!s100 5P;9oCP<JQjiF0B5=69U@1
+Ih>WRMkPnKg=30:K<MT@mk0
+R0
+R11
+R12
+R13
+!i122 0
+L0 1486 769
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R9
+R10
+R1
+Yspi_interface
+Z14 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R2
+!i10b 1
+!s100 5=e1gFb_9@5=KKGT2?;:H2
+IjmGf?oi1Of8HU8`XIoh9g3
+S1
+R0
+w1732989799
+8./verify/spi_interface.sv
+F./verify/spi_interface.sv
+!i122 0
+L0 2 0
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R9
+R10
+R1
+Xspi_pkg
+!s115 spi_interface
+R14
+Z15 DXx6 mtiUvm 7 uvm_pkg 0 22 8V[`8]Q0W57le7Z>zYaAj1
+R2
+!i10b 1
+!s100 Y3>DYnkg9GdlMY<WagZVM2
+I9C8<aVgOVM>2Y2SfL8jP11
+S1
+R0
+w1732286062
+F./verify/spi_pkg.sv
+FC:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src/uvm_macros.svh
+F./verify/tb_defines.svh
+F./verify/spi_seq_item.svh
+F./verify/wb_bfm.svh
+F./verify/spi_driver.svh
+F./verify/spi_monitor.svh
+F./verify/spi_sequencer.svh
+F./verify/spi_agent.svh
+F./verify/spi_coverage.svh
+F./verify/spi_scoreboard.svh
+F./verify/spi_seq.svh
+F./verify/spi_env.svh
+F./verify/spi_test.svh
+!i122 0
+L0 1 0
+V9C8<aVgOVM>2Y2SfL8jP11
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R9
+R10
+R1
+vspi_shift
+R2
+!i10b 1
+!s100 n`M5=Q@h<`UGJF3C:b_IB0
+IJQTnQGYfoi>ANW;TN=?1Q1
+R0
+R11
+R12
+R13
+!i122 0
+L0 2256 2942
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R9
+R10
+R1
+vspi_slave
+R2
+!i10b 1
+!s100 ahEdUlV^GIjTel8inLS:b0
+IUifLWb@beMX:_=26L59;J0
+R0
+w1732991260
+8./verify/dut/spi_slave_netlist.v
+F./verify/dut/spi_slave_netlist.v
+!i122 0
+L0 15 1349
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R9
+R10
+R1
+vtb_top
+R14
+R15
+DXx4 work 7 spi_pkg 0 22 9C8<aVgOVM>2Y2SfL8jP11
+R2
+!i10b 1
+!s100 l]J`bf8?Y]ZOdQCcUB44L0
+I;F]5E1>LRmJTe_bigD91]1
+S1
+R0
+w1732200477
+8./verify/tb_top.sv
+F./verify/tb_top.sv
+!i122 0
+L0 5 85
+R3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R9
+R10
+R1
